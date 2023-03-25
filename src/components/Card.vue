@@ -8,14 +8,15 @@ const props = defineProps({
 
 <template>
   <div class="wrapper">
-    <img :src="podcast['im:image'][0].label" />
-    <h2>{{ podcast["im:name"].label }}</h2>
-    <p>Author: {{ podcast["im:artist"].label }}</p>
+    <img  class="wrapper__img" :src="podcast['im:image'][0].label" />
+    <p class="wrapper__name">{{ podcast["im:name"].label }}</p>
+    <p class="wrapper__author">Author: {{ podcast["im:artist"].label }}</p>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .wrapper {
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,11 +25,11 @@ const props = defineProps({
   border-radius: 1px solid;
   margin: 0 auto;
   margin-bottom: 5em;
-  width: 15em;
-  padding: .5em;
+  width: 18em;
+  padding: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  img {
+  .wrapper__img {
     position: relative;
     border-radius: 45vh;
     width: 45%;
@@ -36,17 +37,17 @@ const props = defineProps({
     bottom: 50px;
   }
 
-  h2 {
+  .wrapper__name {
     position: relative;
     font-size: 1.2em;
-    bottom: 40px;
+    bottom: 0px;
   }
 
-  p {
+   .wrapper__author{
     position: relative;
-    font-size: 20px;
+    font-size: 16px;
     color: dimgray;
-    bottom: 34px;
+    bottom: 5px;
   }
 }
 </style>

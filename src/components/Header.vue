@@ -6,10 +6,10 @@
   </header>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .wrapper {
   display: block;
-  padding: 0.1rem;
+  padding: .1em;
   margin-bottom: 5rem;
   width: 100%;
   .wrapper__title {
