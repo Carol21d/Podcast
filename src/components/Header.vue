@@ -6,7 +6,7 @@
   </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .wrapper {
   display: block;
   padding: .1em;

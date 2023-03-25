@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
   <div class="wrapper">
-    <img  class="wrapper__img" :src="podcast['im:image'][0].label" />
+    <img class="wrapper__img" :src="podcast['im:image'][0].label" />
     <p class="wrapper__name">{{ podcast["im:name"].label }}</p>
     <p class="wrapper__author">Author: {{ podcast["im:artist"].label }}</p>
   </div>
@@ -16,7 +16,6 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .wrapper {
- 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,24 +25,26 @@ const props = defineProps({
   margin: 0 auto;
   margin-bottom: 5em;
   width: 18em;
+  height: 17rem;
   padding: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   .wrapper__img {
     position: relative;
     border-radius: 45vh;
-    width: 45%;
+    width: 55%;
     height: 60%;
     bottom: 50px;
   }
 
   .wrapper__name {
     position: relative;
-    font-size: 1.2em;
-    bottom: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    bottom: 20px;
   }
 
-   .wrapper__author{
+  .wrapper__author {
     position: relative;
     font-size: 16px;
     color: dimgray;
