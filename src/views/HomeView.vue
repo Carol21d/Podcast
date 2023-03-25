@@ -28,11 +28,15 @@ main{
 display: flex;
 flex-direction: column;
 margin: 0 auto;
+width: 85%;
 
 .card{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  margin-top:50px;
 }
 
 

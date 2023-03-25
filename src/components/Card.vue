@@ -1,58 +1,52 @@
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 
 const props = defineProps({
-    podcast :Object,
+  podcast: Object,
 });
-
 </script>
 
 <template>
-    <div class="wrapper">
-        <img  :src="podcast['im:image'][0].label" />
-        <h2>{{ podcast["im:name"].label }}</h2>
-        <p>Author: {{ podcast["im:artist"].label}}</p>
-
-    </div>
-
-
- 
+  <div class="wrapper">
+    <img :src="podcast['im:image'][0].label" />
+    <h2>{{ podcast["im:name"].label }}</h2>
+    <p>Author: {{ podcast["im:artist"].label }}</p>
+  </div>
 </template>
 
-<style lang="scss" scoped>
-.wrapper{
-    display: flex;
-    width: 0 auto;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 1px solid;
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+<style lang="scss">
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 1px solid;
+  margin: 0 auto;
+  margin-bottom: 5em;
+  width: 15em;
+  padding: .5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    img{
-        position: relative;
-        border-radius: 45vh;
-        width:24vh;
-        bottom: 45vh;
-        
-    }
+  img {
+    position: relative;
+    border-radius: 45vh;
+    width: 45%;
+    height: 60%;
+    bottom: 50px;
+  }
 
-    h2{
-        position: relative;
-        font-size: 1.2em;
-        bottom: 3vh;
+  h2 {
+    position: relative;
+    font-size: 1.2em;
+    bottom: 40px;
+  }
 
-    }
-
-
-    p{
-        position: relative;
-        font-size: 20px;
-    }
+  p {
+    position: relative;
+    font-size: 20px;
+    color: dimgray;
+    bottom: 34px;
+  }
 }
-
-
-
-
-
 </style>
