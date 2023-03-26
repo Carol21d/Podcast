@@ -25,30 +25,30 @@ const props = defineProps({
   margin: 0 auto;
   margin-bottom: 5em;
   width: 18em;
-  height: 17rem;
+  height: 10em;
   padding: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   .wrapper__img {
     position: relative;
-    border-radius: 45vh;
-    width: 55%;
-    height: 60%;
-    bottom: 50px;
+    border-radius: 100%;
+    width: 35%;
+    height: 68%;
+    bottom: 35px;
   }
 
   .wrapper__name {
     position: relative;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: bold;
-    bottom: 20px;
+    bottom: 25px;
   }
 
   .wrapper__author {
     position: relative;
     font-size: 16px;
     color: dimgray;
-    bottom: 5px;
+    bottom: 45px;
   }
 }
 </style>
