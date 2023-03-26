@@ -4,16 +4,16 @@ import { ref, defineProps, defineEmits, watch } from "vue";
 
 // const searchPodcasts = ref('');
 const props = defineProps({
-    filterbar: String,
+    modelValue: String,
   
   
 });
 
-const emit = defineEmits(["update:filterbar"]);
-const search = ref(props.filterbar);
+const emit = defineEmits(["update:modelValue"]);
+const search = ref(props.modelValue);
 
 watch(search , findPodcast => {
-  emit("update:filterbar",findPodcast);
+  emit("update:modelValue",findPodcast);
 });
 
 
